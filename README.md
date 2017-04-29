@@ -12,47 +12,23 @@ You can refer to the doc of [weex](https://weex.apache.org/cn/) and [vue](https:
 
 Enjoy the fun of building dingtalk microapp with weex ☺
 
-### Build Setup
+### Getting started
 
 ```bash
-# install dependencies
+# Step 1: install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev:web
+# Step 2: start a web server
+python -m SimpleHTTPServer 8000
 
-# build for web release with minification
-npm run build:web
-
-# start serve 8089
-python -m SimpleHTTPServer 8089
-
-# build for weex dev
+# Step 3: start a dev build with auto hot reload
 npm run dev:weex
 
-# build for weex release
-npm run build:weex
+# Step 4: open your weex microapp in Dingtalk app. 
 
-# build for weex release and web release
-npm run build
-```
+# Step 4.1: send a message to yourself in Dingtalk app with this url:
+http://{your LAN ip}:8000?dd_wx_tpl=http://{your LAN ip}/dist/weex-bundle.js
 
-see package.json ! configuration
-
-### How ?
-
-if is Weex page ，it is diff from web ,u just configuration `dd_wx_tpl` GET param in Web URL：
-
-```bash
-
-http://localhost?dd_wx_tpl=http://localhost/weex-bundle.js
-
-```
-
-if Web page , direct access to the Web URL:
-
-```bash
-
-http://localhost
+# Step 4.2: click the url message and open the weex microapp
 
 ```
