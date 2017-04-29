@@ -18,8 +18,8 @@ Enjoy the fun of building dingtalk microapp with weex ☺
 # Step 1: install dependencies
 npm install
 
-# Step 2: start a web server
-python -m SimpleHTTPServer 8000
+# Step 2: start a web server in dist directory 
+cd dist && python -m SimpleHTTPServer 8000
 
 # Step 3: start a dev build with auto hot reload
 npm run dev:weex
