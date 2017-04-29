@@ -15,18 +15,18 @@ Enjoy the fun of building dingtalk microapp with weex ☺
 ### Getting started
 
 * Step 1: install dependencies
-npm install
+```npm install```
 
 * Step 2: start a web server in dist directory 
-cd dist && python -m SimpleHTTPServer 8000
+```cd dist && python -m SimpleHTTPServer 8000```
 
 * Step 3: start a dev build with auto hot reload
-npm run dev:weex
+```npm run dev:weex```
 
 * Step 4: open your weex microapp in Dingtalk app. 
 
   * 4.1: send a message to yourself in Dingtalk app with this url:
-http://{your LAN ip}:8000?dd_wx_tpl=http://{your LAN ip}/dist/weex-bundle.js
+```http://{your LAN ip}:8000?dd_wx_tpl=http://{your LAN ip}/dist/weex-bundle.js```
 
   * 4.2: click the url message and open the weex microapp
 
